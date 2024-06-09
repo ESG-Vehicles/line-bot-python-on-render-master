@@ -5,7 +5,7 @@ services:
   repo: https://github.com/line/line-bot-sdk-python.git
   buildCommand: cd examples/flask-echo;pip install gunicorn -r requirements.txt
   repo: https://github.com/ESG-Vehicles/line-bot-python-on-render-master
-  startCommand: python app.py
+  startCommand: gunicorn app.py
   plan: free
   autoDeploy: false
   envVars:
