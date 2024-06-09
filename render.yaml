@@ -1,3 +1,4 @@
+'''
 services:
 - type: web
   name: line-bot-python-flask
@@ -12,6 +13,7 @@ services:
     sync: false
   - key: 8ea0cd9cae47cb9da3d7749c40cdbee4
     sync: false
+'''
 # - type: web
 #   name: line-bot-python-flask-with-handler
 #   env: python
@@ -38,19 +40,19 @@ services:
 #     sync: false
 #   - key: LINE_CHANNEL_SECRET
 #     sync: false
-# - type: web
-#   name: line-bot-python-simple-server
-#   env: python
-#   repo: https://github.com/line/line-bot-sdk-python.git
-#   buildCommand: cd examples/simple-server-echo;pip install -r requirements.txt
-#   startCommand: cd examples/simple-server-echo;python app.py
-#   plan: free
-#   autoDeploy: false
-#   envVars:
-#   - key: LINE_CHANNEL_ACCESS_TOKEN
-#     sync: false
-#   - key: LINE_CHANNEL_SECRET
-#     sync: false
+- type: web
+  name: line-bot-python-simple-server
+  env: python
+  repo: https://github.com/line/line-bot-sdk-python.git
+  buildCommand: cd examples/simple-server-echo;pip install -r requirements.txt
+  startCommand: cd examples/simple-server-echo;python app.py
+  plan: free
+  autoDeploy: false
+  envVars:
+  - key: GvN8AzSdhiLL/tVY5XZnmPWUTb/AAsAb0Yo7YcQTHVz3biUZylLEN7rBT94d8D6jmOvfn/4hkHOBodMWZKSKtF9NlvMsuMU5ixLTRlqjN7MFDORPFHJU161LN7f3h0Rw0E9y9ksMk27xaG8dQKkRHwdB04t89/1O/w1cDnyilFU=
+    sync: false
+  - key: 8ea0cd9cae47cb9da3d7749c40cdbee4
+    sync: false
 # - type: web
 #   name: line-bot-python-aiohttp
 #   env: python
